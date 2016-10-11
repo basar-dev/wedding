@@ -1101,7 +1101,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #69385b;
   text-decoration: none;
 }
 a:hover,
@@ -3020,7 +3020,7 @@ select[multiple].form-group-lg .form-control {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #000;
   text-decoration: none;
 }
 .btn:active,

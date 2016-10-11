@@ -4,6 +4,31 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+/* cyrillic */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v4/cKr_e199f0xMkxMkRbEJXyEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v4/3Annd_XP-99FcGbOpm6fVCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8fk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 html, body{
     font-size: 100%;
 	background:	#fff;
@@ -45,18 +70,6 @@ input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.na
 	-ms-background-size:cover;
 	min-height:800px;
 	padding:2em 0 0;
-}
-.banner-phone{
-	float:left;
-}
-.banner-phone p{
-	color:#fff;
-	margin:3em 0 0;
-	padding-left:1em;
-}
-.banner-phone p span{
-	left:-1em;
-	color:#45CBBF;
 }
 .logo{
 	float:left;
@@ -168,7 +181,7 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 }
 /*-- //social-icons --*/
 .banner-info{
-    margin:1em auto 1em;
+    margin:4em auto 1em;
     width: 85%;
     text-align: center;
 }
@@ -749,7 +762,7 @@ ul.wmuSliderPagination {
     width:42%;
 }
 .services-grids-wedding-left img,.services-grids-wedding-right img{
-    border: 3px solid #C2BBA1;
+    border: 3px solid #69385b;
     border-radius: 100%;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -762,13 +775,17 @@ ul.wmuSliderPagination {
 }
 .services-grids-wedding-right h4,.services-grids-wedding-left h4{
 	font-size:1em;
-	color:#45CBBF;
+	color:#69385b;
 	margin:1em 0;
 }
 .services-grids-wedding h5{
-	margin:1em 0 .5em;
+	margin:1.5em 0 .5em;
 	font-size:1.5em;
 	color:#212121;
+}
+.services-grids-wedding h4{
+	margin:1.5em 0 .5em;
+	color:#424242;
 }
 .services-grids-wedding p{
 	font-size:14px;
@@ -777,17 +794,17 @@ ul.wmuSliderPagination {
 }
 /* ---------- TIMER ---------- */
 #counter {
-	height: 125px;
-    font-size: 40px;
+	height: 175px;
+    font-size: 60px;
 	color:#212121;
 	overflow: hidden;
 }
 .countHours,.countDays,.countMinutes {
-    border-right: 1px solid #E3E3E3;
+    border-right: 1px solid #69385b;
 }
 .countDays, .countHours, .countMinutes, .countSeconds {
     display:inline-block;
-	padding: 0.5em 0;
+	padding: 0.5em 0.5em 0em 0.5em;
 }
 .points {
 	float: left;
@@ -1293,7 +1310,7 @@ h2.resp-accordion {
 		margin-left: 14em;
 	}
 	.banner-info {
-		margin: 10em auto 11em;
+		margin: 5em auto 11em;
 		width: 95%;
 	}
 	.banner-info p {
@@ -1396,7 +1413,7 @@ h2.resp-accordion {
 		font-size: 3.7em;
 	}
 	.banner-info {
-		margin: 8em auto 11em;
+		margin: 7em auto 11em;
 		width: 100%;
 	}
 	.link-effect-14 a {

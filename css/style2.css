@@ -1,0 +1,333 @@
+.important-people-head h3{
+	color: #000000;
+	font-size: 5.2em;
+	font-family: 'Niconne', cursive;
+	margin-bottom: 1em;
+}
+.important-people-text h4{
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.important-people-text h5{
+	color: #8fd301;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.important-people-text p{
+	color: #6e6e6e;
+	font-size: 15px;
+	font-weight: 400;
+	line-height:1.6em;
+}
+.important-people-text {
+	padding: 0;
+	margin-top: 5px;
+}
+.important-people {
+	padding: 6em 0;
+}
+.important-people-grid {
+	margin-bottom: 5em;
+}
+.important-people-grid:nth-child(3) {
+	margin-bottom: 1em;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.important-people-image {
+	position: relative;
+}
+.important-people-image img {
+	width: 100%;
+}
+.s-icons {
+	position:absolute;
+	top: 100px;
+	left: 81px;
+	display:none;
+}
+
+.important-people-image:hover{
+	opacity:0.5;
+	cursor:pointer;
+}
+.important-people-image:hover div.s-icons{
+	display:block;
+}
+
+/******************************************************************************************************************************
+RESPONSIVE
+*******************************************************************************************************************************/
+@media only screen and (max-width:1366px) {
+	.important-people {
+		padding: 4em 0;
+	}
+	.important-people-head h3 {
+		font-size: 5em;
+		margin-bottom: 0.6em;
+	}
+}
+@media only screen and (max-width:1280px) {
+	.important-people-head h3 {
+		font-size: 4.5em;
+		margin-bottom: 0.8em;
+	}
+	.social-icons {
+		padding-top: 16em;
+	}
+}
+@media only screen and (max-width:1024px) {
+	.important-people-head h3 {
+		font-size: 4em;
+		margin-bottom: 0.6em;
+	}
+	.important-people-image {
+		padding: 0 6px 0 12px;
+	}
+	.important-people-image:nth-child(3) {
+		padding: 0 12px 0 6px;
+	}
+	.s-icons {
+		top: 79px;
+		left: 56px;
+	}
+	.important-people-text h4 {
+		font-size: 18px;
+	}
+	.important-people-text h5 {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.important-people-text p {
+		font-size: 14px;
+		line-height: 1.7em;
+		height: 160px;
+		overflow: hidden;
+	}
+	.important-people-grid {
+		margin-bottom: 3.5em;
+	}
+	.important-people {
+		padding: 3em 0;
+	}
+	.social-icons {
+		padding-top: 13em;
+	}
+}
+@media only screen and (max-width:800px) {
+	.important-people-head h3 {
+		font-size: 3.6em;
+		margin-bottom: 0.5em;
+	}
+	.important-people-text {
+		padding: 0 15px 0 15px;
+		margin-top: 15px;
+		width: 65%;
+		float: left;
+		margin-bottom: 28px;
+	}
+	.important-people-image {
+		padding: 0 15px;
+		widtH: 35%;
+		float: left;
+		margin-bottom: 25px;
+	}
+	.important-people-text p {
+		font-size: 15px;
+	}
+	.important-people-grid {
+		margin-bottom: 0em;
+	}
+	.important-people {
+		padding: 3em 0 12px 0;
+	}
+	i.facebook {
+		width: 40px;
+		height: 40px;
+		background: url('../images/img-sprite.png') no-repeat 1px -3px;
+		margin-right: 10px;
+		background-size: 200px;
+	}
+	i.twitter {
+		width: 40px;
+		height: 40px;
+		background: url('../images/img-sprite.png') no-repeat -49px -3px;
+		margin-right: 15px;
+		background-size: 200px;
+	}
+	i.google-pluse {
+		width: 40px;
+		height: 40px;
+		background: url('../images/img-sprite.png') no-repeat -103px -3px;
+		margin-right: 13px;
+		background-size: 200px;
+	}
+	i.pinterest {
+		width: 40px;
+		height: 40px;
+		background: url('../images/img-sprite.png') no-repeat -154px -3px;
+		background-size: 200px;
+	}
+	.social-icons {
+		padding-top: 12em;
+	}
+}
+@media only screen and (max-width:768px) {
+
+}
+@media only screen and (max-width:640px) {
+	.important-people-head h3 {
+		font-size: 3.2em;
+	}
+	.important-people-text {
+		padding: 0 15px 0 0px;
+		margin-top: 13px;
+		margin-bottom: 28px;
+	}
+	.important-people-image {
+		padding: 0 0 0 15px;
+		margin: 11px 0 29px 0;
+	}
+	.s-icons {
+		top: 63px;
+		left: 46px;
+	}
+	.important-people-text p {
+		font-size: 14px;
+		height: 140px;
+	}
+	.important-people {
+		padding: 2em 0 5px 0;
+	}
+	.social-icons {
+		padding-top: 9em;
+	}
+}
+@media only screen and (max-width:480px) {
+	.social-icons {
+		padding-top: 7em;
+	}
+	.important-people-head h3 {
+		font-size: 2.7em;
+	}
+	.important-people-text h4 {
+		font-size: 16px;
+	}
+	.important-people-text h5 {
+		font-size: 16px;
+	}
+	.important-people-text {
+		width: 60%;
+	}
+	.important-people-image {
+		widtH: 40%;
+		margin: 17px 0 29px 0;
+		padding: 0;
+	}
+	.important-people-text p {
+		height: 133px;
+	}
+	.important-people-image:nth-child(3) {
+		padding: 0 12px 0 0px;
+	}
+	i.tw {
+		width: 40px;
+		height: 40px;
+		background: url('../images/img-sprite.png') no-repeat -6px -56px;
+		background-size: 200px;
+	}
+	i.fb{
+		width: 40px;
+		height: 40px;
+		background: url('../images/img-sprite.png') no-repeat -55px -56px;
+		background-size: 200px;
+	}
+	.s-icons {
+		top: 71px;
+	}
+}
+@media only screen and (max-width:320px) {
+	.important-people-head h3 {
+		font-size: 2em;
+	}
+	.important-people {
+		padding: 1.2em 0 5px 0;
+	}
+	.important-people-text h4 {
+		font-size: 14px;
+	}
+	.important-people-text h5 {
+		font-size: 14px;
+		margin-bottom: 3px;
+	}
+	.important-people-text p {
+		height: 68px;
+		font-size: 13px;
+	}
+	.important-people-text {
+		padding: 0 7px 0 0px;
+		margin-bottom: 28px;
+	}
+	.important-people-image {
+		widtH: 38%;
+		margin: 11px 0 14px 0;
+	}
+	.important-people-text {
+		width: 62%;
+		margin-bottom: 15px;
+	}
+	i.tw {
+		width: 30px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -5px -33px;
+		background-size: 130px;
+	}
+	i.fb {
+		width: 30px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -37px -33px;
+		background-size: 130px;
+	}
+	.s-icons {
+		top: 38px;
+		left: 25px;
+	}
+	i.facebook {
+		width: 30px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat 1px -3px;
+		margin-right: 5px;
+		background-size: 150px;
+	}
+	i.twitter {
+		width: 30px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -37px -3px;
+		margin-right: 5px;
+		background-size: 150px;
+	}
+	i.google-pluse{
+		width: 30px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -77px -3px;
+		margin-right: 5px;
+		background-size: 150px;
+	}
+	i.pinterest {
+		width: 30px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -115px -3px;
+		background-size: 150px;
+	}
+	.social-icons {
+		padding-top: 6em;
+	}
+}
