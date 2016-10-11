@@ -11,7 +11,7 @@
 	text-transform: uppercase;
 }
 .important-people-text h5{
-	color: #8fd301;
+	color: #69385b;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -36,17 +36,63 @@
 .important-people-grid:nth-child(3) {
 	margin-bottom: 1em;
 }
-.text-left {
-  text-align: left;
+i.facebook{
+	width:65px;
+	height:65px;
+	background:url('../images/img-sprite.png') no-repeat 9px 0px;
+	display:inline-block;
+	margin-right:15px;
 }
-.text-right {
-  text-align: right;
+i.facebook:hover,i.twitter:hover,i.google-pluse:hover,i.pinterest:hover{
+	opacity:0.5;
+}
+i.twitter{
+	width:65px;
+	height:65px;
+	background:url('../images/img-sprite.png') no-repeat -69px 0px;
+	display:inline-block;
+	margin-right:15px;
+}
+i.google-pluse{
+	width:65px;
+	height:65px;
+	background:url('../images/img-sprite.png') no-repeat -151px 0px;
+	display:inline-block;
+	margin-right:15px;
+}
+i.pinterest{
+	width:65px;
+	height:65px;
+	background:url('../images/img-sprite.png') no-repeat -227px 0px;
+	display:inline-block;
+}
+.social-icons {
+	padding-top: 18em;
+}
+i.tw{
+	width:65px;
+	height:65px;
+	background:url('../images/img-sprite.png') no-repeat -7px -80px;
+	display:inline-block;
+}
+i.fb{
+	width:65px;
+	height:65px;
+	background:url('../images/img-sprite.png') no-repeat -83px -80px;
+	display:inline-block;
+}
+i.tw:hover,i.fb:hover{
+	opacity:0.5;
 }
 .important-people-image {
 	position: relative;
 }
 .important-people-image img {
 	width: 100%;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius:25px;
+	-khtml-border-radius: 25px;
 }
 .s-icons {
 	position:absolute;
@@ -62,10 +108,7 @@
 .important-people-image:hover div.s-icons{
 	display:block;
 }
-
-/******************************************************************************************************************************
-RESPONSIVE
-*******************************************************************************************************************************/
+/*-- responsive-design --*/
 @media only screen and (max-width:1366px) {
 	.important-people {
 		padding: 4em 0;
@@ -74,8 +117,17 @@ RESPONSIVE
 		font-size: 5em;
 		margin-bottom: 0.6em;
 	}
+	.birds img {
+		width: 16%;
+		left: 35em;
+	}
 }
 @media only screen and (max-width:1280px) {
+	.birds img {
+		width: 14%;
+		left: 35.8em;
+		margin-top: 6em;
+	}
 	.important-people-head h3 {
 		font-size: 4.5em;
 		margin-bottom: 0.8em;
@@ -85,6 +137,11 @@ RESPONSIVE
 	}
 }
 @media only screen and (max-width:1024px) {
+	.birds img {
+		width: 13%;
+		left: 30em;
+		margin-top: 5em;
+	}
 	.important-people-head h3 {
 		font-size: 4em;
 		margin-bottom: 0.6em;
@@ -123,6 +180,10 @@ RESPONSIVE
 	}
 }
 @media only screen and (max-width:800px) {
+	.birds img {
+		left: 23.3em;
+		margin-top: 4em;
+	}
 	.important-people-head h3 {
 		font-size: 3.6em;
 		margin-bottom: 0.5em;
@@ -181,7 +242,6 @@ RESPONSIVE
 	}
 }
 @media only screen and (max-width:768px) {
-
 }
 @media only screen and (max-width:640px) {
 	.important-people-head h3 {
@@ -209,6 +269,9 @@ RESPONSIVE
 	}
 	.social-icons {
 		padding-top: 9em;
+	}
+	.birds img {
+		left: 19.3em;
 	}
 }
 @media only screen and (max-width:480px) {
@@ -253,8 +316,19 @@ RESPONSIVE
 	.s-icons {
 		top: 71px;
 	}
+	.birds img {
+		width: 40%;
+	}
+	.birds img {
+		left: 4.6em;
+	}
 }
 @media only screen and (max-width:320px) {
+	.birds img {
+		width: 30%;
+		left: 4.2em;
+		margin-top: 2.2em;
+	}
 	.important-people-head h3 {
 		font-size: 2em;
 	}

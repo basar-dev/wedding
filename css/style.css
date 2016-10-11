@@ -54,6 +54,9 @@ body a:hover{
 	font-size:14px;
 	line-height:1.8em;
 }
+#about{
+  margin:0 0 4em 0;
+}
 input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.nav-tabs > li > a,.copyright p a{
 	transition:.5s ease-in-out;
 	-webkit-transition:.5s ease-in-out;
@@ -62,13 +65,13 @@ input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.na
 	-ms-transition:.5s ease-in-out;
 }
 .banner{
-	background:url(../images/banner16.jpg) no-repeat 0px 0px;
+	background:url(../images/banner17.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:800px;
+	min-height:600px;
 	padding:2em 0 0;
 }
 .logo{
@@ -181,18 +184,9 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 }
 /*-- //social-icons --*/
 .banner-info{
-    margin:4em auto 1em;
+    margin:5em auto 1em;
     width: 85%;
     text-align: center;
-}
-.banner-info p{
-	font-size: 5em;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    line-height: 1.8em;
-    font-weight: 900;
-    padding: .3em;
-    background: rgba(33, 33, 33, 0.57);
 }
 .navbar-default {
     background: none;
@@ -328,7 +322,7 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 /*-- //banner --*/
 /*-- banner-bottom --*/
 .banner-bottom,.testimonials,.team,.services,.news,.gallery,.contact{
-	padding:5em 0;
+	padding:3em 0;
 }
 .banner-bottom h3,.team h3,.services h3,.news h3,.newsletter h3,.gallery h3,.contact h3{
 	text-align:center;
@@ -374,7 +368,7 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 	left: 39.3%;
 }
 p.about-dummy{
-	margin:3em auto 0;
+	margin:1em auto 0;
 	color:#999;
 	width:70%;
 	text-align:center;
@@ -385,18 +379,18 @@ p.about-dummy{
 	padding:0;
 }
 .banner-bottom-grids{
-	margin:3em 0 0;
+	margin:1em 0 16em 0;
 }
 .banner-bottom-grid,.team-grid1 {
     position: relative;
     overflow: hidden;
 }
-.banner-bottom-grid img,.team-grid1 img{
+/*.banner-bottom-grid img,.team-grid1 img{
     -webkit-transition: all 3s ease-in-out;
     -moz-transition: all 3s ease-in-out;
     -o-transition: all 3s ease-in-out;
     transition: all 3s ease-in-out;
-}
+}*/
 .banner-bottom-grid:hover img,.team-grid:hover .team-grid1 img{
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
@@ -419,7 +413,7 @@ position:relative;
 }
 .nbs-flexisel-container {
 	position: relative;
-	max-width: 100%;
+	0%;
 }
 .nbs-flexisel-ul {
 	position: relative;
@@ -540,7 +534,7 @@ p.testimonials-dummy{
 	overflow: hidden;
 }
 .wmuSlider .wmuSliderWrapper article img {
-	/*--max-width: 100%;
+	/*--0%;
 	width: auto;
 	height: auto;
 	display:block;--*/
@@ -754,37 +748,51 @@ ul.wmuSliderPagination {
 	text-align:center;
 }
 .services-grids-wedding1{
-	width:25%;
+	width:38%;
 	margin:0 auto;
 }
 .services-grids-wedding-left{
 	float: left;
     width:42%;
 }
-.services-grids-wedding-left img,.services-grids-wedding-right img{
-    border: 3px solid #69385b;
-    border-radius: 100%;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	-o-border-radius: 100%;
-	-ms-border-radius: 100%;
+.services-grids-wedding-right img{
+    border: 4px solid #69385b;
+    border-radius: 15px 50px;
+    -moz-border-radius: 15px 50px;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 50px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 50px;
+    -khtml-border-radius: 30px;
+}
+.services-grids-wedding-left img{
+    border: 4px solid #69385b;
+    border-radius: 50px 15px;
+    -moz-border-radius: 50px 15px;
+    -webkit-border-top-left-radius: 50px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 50px;
+    -webkit-border-bottom-left-radius: 15px;
+    -khtml-border-radius: 30px;
 }
 .services-grids-wedding-right{
 	float:right;
 	width:42%;
 }
 .services-grids-wedding-right h4,.services-grids-wedding-left h4{
-	font-size:1em;
+	font-size:1.4em;
 	color:#69385b;
 	margin:1em 0;
+  font-weight: 700;
 }
 .services-grids-wedding h5{
-	margin:1.5em 0 .5em;
-	font-size:1.5em;
+	margin:1.8em 0 1em;
+	font-size:1.6em;
 	color:#212121;
 }
 .services-grids-wedding h4{
-	margin:1.5em 0 .5em;
+	margin:1.7em 0 .5em;
+  font-size:1.1em;
 	color:#424242;
 }
 .services-grids-wedding p{
@@ -793,7 +801,7 @@ ul.wmuSliderPagination {
 	margin:1.5em 0;
 }
 /* ---------- TIMER ---------- */
-#counter {
+/*#counter {
 	height: 175px;
     font-size: 60px;
 	color:#212121;
@@ -827,8 +835,8 @@ ul.wmuSliderPagination {
     clear: both;
     padding: 0px;
 	font-family: 'Open Sans', sans-serif;
-}
-/* ---------- /TIMER ---------- */
+}*/
+/* ---------- /TIMER ---------- */*/
 /*-- //services --*/
 /*-- services-bottom --*/
 .services-bottom{
@@ -1290,8 +1298,11 @@ h2.resp-accordion {
 	.banner-info p {
 		padding: 0em .3em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.banner {
-		min-height: 740px;
+		min-height: 640px;
 	}
 	.nav-tabs > li:nth-child(1) {
 		margin-left: 26em;
@@ -1313,14 +1324,20 @@ h2.resp-accordion {
 		margin: 5em auto 11em;
 		width: 95%;
 	}
+  .services-grids-wedding1{
+        width:36%;
+    }
 	.banner-info p {
 		font-size: 4.5em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.navbar-nav > li > a {
 		padding: 13px 18px;
 	}
 	.banner {
-		min-height: 665px;
+		min-height: 165px;
 	}
 	.banner-bottom, .testimonials, .team, .services, .news, .gallery, .contact {
 		padding: 4em 0;
@@ -1412,15 +1429,21 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 3.7em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
+  div .timersub{
+    font-size: 1em;
+  }
 	.banner-info {
-		margin: 7em auto 11em;
+		margin: 5em auto 11em;
 		width: 100%;
 	}
 	.link-effect-14 a {
 		margin: 0 4px;
 	}
 	.banner {
-		min-height: 600px;
+		min-height: 300px;
 	}
 	.banner-bottom, .testimonials, .team, .services, .news, .gallery, .contact {
 		padding: 3em 0;
@@ -1476,7 +1499,7 @@ h2.resp-accordion {
 		padding: 2em;
 	}
 	.services-grids-wedding1 {
-		width: 40%;
+		width: 45%;
 	}
 	.services-bottom {
 		padding: 3.5em 0 0;
@@ -1527,10 +1550,10 @@ h2.resp-accordion {
 }
 @media (max-width:800px){
 	.banner {
-		min-height: 530px;
+		min-height: 300px;
 	}
 	.banner-info {
-		margin: 8em auto 7em;
+		margin: 5em auto 7em;
 	}
 	.gallery h3 span:before {
 		left: 48.2%;
@@ -1549,6 +1572,9 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 3.3em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.testimonials-grid-left-grid-left {
 		width: 15%;
 	}
@@ -1629,8 +1655,11 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 3em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.banner-info {
-		margin: 6em auto 5em;
+		margin: 5em auto 5em;
 	}
 	.navbar-toggle {
 		margin: 0 0 0 18em;
@@ -1669,7 +1698,7 @@ h2.resp-accordion {
 		min-height: 280px;
 	}
 	.services-grids-wedding1 {
-		width: 48%;
+		width: 60%;
 	}
 	.blog-grid-right {
 		width: 75%;
@@ -1700,6 +1729,9 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 2.5em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.logo h1 a {
 		font-size: 1.2em;
 	}
@@ -1795,8 +1827,11 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 2em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.banner-info {
-		margin: 5em auto 4em;
+		margin: 6em auto 4em;
 	}
 	.navbar-toggle {
 		margin: 0 0 0 12.5em;
@@ -1950,6 +1985,9 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 1.9em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.logo h1 a {
 		font-size: 1em;
 		line-height: 0;
@@ -2094,6 +2132,9 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 1.7em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.link-effect-14 a {
 		margin: 0 65px;
 	}
@@ -2226,8 +2267,11 @@ h2.resp-accordion {
 	.banner-info p {
 		font-size: 1.4em;
 	}
+  div .timersub{
+    font-size: 1em;
+  }
 	.banner-info {
-		margin: 4em auto 3em;
+		margin: 6em auto 3em;
 	}
 	.banner {
 		min-height: 315px;

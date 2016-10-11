@@ -7,28 +7,31 @@ HEADER
     display: inline-block;
     padding: 20px 12px 0px 12px;
     text-align: center;
-    width: 130px;
-    border-radius: 50%;
-    border: 4px solid #69385b;
+    width: 150px;
+    border-radius: 10%;
+    border: 0px solid #776071;
+    border-bottom: 1px solid #776071;
 }
 .timer_box h1{
     font-size: 44px;
     margin-top: 5px;
     margin-bottom: 0px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
+    color: #1f1f1f;
 }
 #days p, #hours p, #minutes p, #seconds p {
     margin-top: 0px;
-    color: #000;
+    color: #776071;
     background-color: transparent;
 }
-
+.timer_box{
+    margin: 3em 1em 1em 0;
+}
 /******************************************************************************************************************************
 RESPONSIVE
 *******************************************************************************************************************************/
 @media only screen and (max-width: 520px) {
-    .timer_box{ margin: 0 12px 12px 0;}
+    .timer_box{ margin: 5em 1em 1em 0;}
     .tp-bullets{display: none;}
 
     #appendedInputButtons{
