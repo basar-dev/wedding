@@ -1,3 +1,53 @@
+#black {
+	margin-top: 0px;
+	background-color: #2f2f2f;
+	min-height: 300px;
+	width: 100%;
+}
+
+#black h3 {
+	color: white;
+}
+
+#black h4 {
+	color: white;
+	text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Ruda', sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#black p {
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#black i {
+	font-size: 35px;
+}
+
+#black h1 {
+	color: white;
+	font-size: 70px;
+  font-family: 'Ruda', sans-serif;
+  font-weight: 900;
+}
+/* Padding top & bottom */
+.pt {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+/* margin top & Bottom */
+.mt {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.centered {
+    text-align: center;
+}
 .banner-bottom-grids{
   min-height: 180px;
 	margin:0 1em 2em 1em;
@@ -164,7 +214,7 @@ i.tw:hover,i.fb:hover{
 		font-size: 14px;
 		line-height: 1.7em;
 		height: 160px;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 }
 @media only screen and (max-width:1180px) {
@@ -175,7 +225,7 @@ i.tw:hover,i.fb:hover{
 }
 @media only screen and (max-width:1080px) {
 	.banner-bottom-grids{
-	 min-height: 90px;
+	 min-height: 110px;
 	 margin:0 1em 2em 1em;
 	}
 }
@@ -235,7 +285,6 @@ i.tw:hover,i.fb:hover{
 	padding: 0 15px 0 15px;
 	margin-top: 15px;
 	float: left;
-	margin-bottom: 28px;
 }
 .important-people-text h4{
 	color: #000000;
@@ -295,7 +344,6 @@ i.tw:hover,i.fb:hover{
 		padding: 0 15px 0 15px;
 		margin-top: 15px;
 		float: left;
-		margin-bottom: 28px;
 	}
 	.important-people-image {
 		/*padding: 0 15px;*/
@@ -426,7 +474,7 @@ i.tw:hover,i.fb:hover{
 		font-size: 13px;
 		line-height: 1.7em;
 		height: 130px;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 }
 @media (max-width: 568px){
@@ -460,14 +508,31 @@ i.tw:hover,i.fb:hover{
 		margin-bottom: 5px;
 	}
 	.important-people-text p {
-		font-size: 9px;
+		font-size: 12px;
 		height: 150px;
 	}
 }
 @media only screen and (max-width:480px) {
 	.banner-bottom-grids{
-		 min-height: 340px;
+		 min-height: 520px;
 		 margin:0 1em 2em 1em;
+	}
+	#bride-text{
+		width: 100%;
+		float:left;
+	}
+	#groom-image{
+		float:left;
+		width: 50%;
+		padding-bottom: 0;
+	}
+	#bride-image{
+		width: 50%;
+		float:left;
+	  padding-bottom: 0;
+	}
+	#groom-text{
+		width: 100%;
 	}
 	.important-people-head h3 {
 		font-size: 2.7em;
@@ -519,6 +584,9 @@ i.tw:hover,i.fb:hover{
 		width: 30%;
 		left: 4.2em;
 		margin-top: 2.2em;
+	}
+	#groom-image, #bride-image{
+		margin-top: 6em;
 	}
 	.important-people-head h3 {
 		font-size: 2em;
