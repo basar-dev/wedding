@@ -1,3 +1,13 @@
+.banner-bottom-grids{
+  min-height: 180px;
+	margin:0 1em 2em 1em;
+}
+#groom-image{
+	padding-bottom: 3em;
+}
+#bride-image{
+	padding-bottom: 3em;
+}
 .important-people-head h3{
 	color: #000000;
 	font-size: 5.2em;
@@ -24,8 +34,14 @@
 	line-height:1.6em;
 }
 .important-people-text {
-	padding: 0;
+	padding: 5px;
 	margin-top: 5px;
+}
+#bride-text{
+  padding-left: 0.5em;
+}
+#groom-text{
+  padding-right: 0.5em;
 }
 .important-people {
 	padding: 6em 0;
@@ -66,9 +82,6 @@ i.pinterest{
 	background:url('../images/img-sprite.png') no-repeat -227px 0px;
 	display:inline-block;
 }
-.social-icons {
-	padding-top: 18em;
-}
 i.tw{
 	width:65px;
 	height:65px;
@@ -89,6 +102,7 @@ i.tw:hover,i.fb:hover{
 }
 .important-people-image img {
 	width: 100%;
+
 	border-radius: 25px;
 	-moz-border-radius: 25px;
 	-webkit-border-radius:25px;
@@ -121,6 +135,9 @@ i.tw:hover,i.fb:hover{
 		width: 16%;
 		left: 35em;
 	}
+	.important-people-image img{
+		width:100%;
+	}
 }
 @media only screen and (max-width:1280px) {
 	.birds img {
@@ -128,33 +145,13 @@ i.tw:hover,i.fb:hover{
 		left: 35.8em;
 		margin-top: 6em;
 	}
+	.banner-bottom-grids{
+	  min-height: 160px;
+		margin:0 1em 2em 1em;
+	}
 	.important-people-head h3 {
 		font-size: 4.5em;
 		margin-bottom: 0.8em;
-	}
-	.social-icons {
-		padding-top: 16em;
-	}
-}
-@media only screen and (max-width:1024px) {
-	.birds img {
-		width: 13%;
-		left: 30em;
-		margin-top: 5em;
-	}
-	.important-people-head h3 {
-		font-size: 4em;
-		margin-bottom: 0.6em;
-	}
-	.important-people-image {
-		padding: 0 6px 0 12px;
-	}
-	.important-people-image:nth-child(3) {
-		padding: 0 12px 0 6px;
-	}
-	.s-icons {
-		top: 79px;
-		left: 56px;
 	}
 	.important-people-text h4 {
 		font-size: 18px;
@@ -169,20 +166,126 @@ i.tw:hover,i.fb:hover{
 		height: 160px;
 		overflow: hidden;
 	}
+}
+@media only screen and (max-width:1180px) {
+	.banner-bottom-grids{
+		min-height: 120px;
+		margin:0 1em 2em 1em;
+	}
+}
+@media only screen and (max-width:1080px) {
+	.banner-bottom-grids{
+	 min-height: 90px;
+	 margin:0 1em 2em 1em;
+	}
+}
+@media only screen and (max-width:1024px) {
+	.birds img {
+		width: 13%;
+		left: 30em;
+		margin-top: 5em;
+	}
+	.important-people-image img{
+	  width: 100%;
+	}
+	.important-people-head h3 {
+		font-size: 4em;
+		margin-bottom: 0.6em;
+	}
+
+	.important-people-image:nth-child(3) {
+		padding: 0 12px 0 6px;
+	}
+	.s-icons {
+		top: 79px;
+		left: 56px;
+	}
 	.important-people-grid {
 		margin-bottom: 3.5em;
 	}
 	.important-people {
 		padding: 3em 0;
 	}
-	.social-icons {
-		padding-top: 13em;
-	}
+}
+@media only screen and (max-width:991px){
+	.banner-bottom-grids{
+	 min-height: 520px;
+	 margin:0 1em 2em 1em;
+ }
+.important-people-grid {
+		width: 100%;
+		margin-bottom: 3em;
+}
+#bride-text{
+	width: 65%;
+	float:left;
+}
+#groom-image{
+	float:left;
+	width: 35%;
+}
+#bride-image{
+  width: 35%;
+	float:left;
+}
+#groom-text{
+  width: 65%;
+}
+.important-people-text {
+	padding: 0 15px 0 15px;
+	margin-top: 15px;
+	float: left;
+	margin-bottom: 28px;
+}
+.important-people-text h4{
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.important-people-text h5{
+	color: #69385b;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.important-people-text p{
+	color: #6e6e6e;
+	font-size: 15px;
+	font-weight: 400;
+	line-height:1.6em;
+}
+}
+@media only screen and (max-width:900px) {
+.banner-bottom-grids{
+	min-height: 460px;
+	margin:0 1em 2em 1em;
+}
 }
 @media only screen and (max-width:800px) {
+	.banner-bottom-grids{
+	 min-height: 410px;
+	 margin:0 1em 2em 1em;
+ }
 	.birds img {
 		left: 23.3em;
 		margin-top: 4em;
+	}
+	#bride-text{
+		width: 65%;
+		float:left;
+	}
+	#groom-image{
+		float:left;
+		width: 35%;
+	}
+	#bride-image{
+	  width: 35%;
+		float:left;
+	}
+	#groom-text{
+	  width: 65%;
 	}
 	.important-people-head h3 {
 		font-size: 3.6em;
@@ -191,21 +294,18 @@ i.tw:hover,i.fb:hover{
 	.important-people-text {
 		padding: 0 15px 0 15px;
 		margin-top: 15px;
-		width: 65%;
 		float: left;
 		margin-bottom: 28px;
 	}
 	.important-people-image {
-		padding: 0 15px;
-		widtH: 35%;
+		/*padding: 0 15px;*/
+		width: 60%;
+		height: 100%;
 		float: left;
 		margin-bottom: 25px;
 	}
 	.important-people-text p {
 		font-size: 15px;
-	}
-	.important-people-grid {
-		margin-bottom: 0em;
 	}
 	.important-people {
 		padding: 3em 0 12px 0;
@@ -237,46 +337,137 @@ i.tw:hover,i.fb:hover{
 		background: url('../images/img-sprite.png') no-repeat -154px -3px;
 		background-size: 200px;
 	}
-	.social-icons {
-		padding-top: 12em;
-	}
 }
 @media only screen and (max-width:768px) {
+	.banner-bottom-grids{
+	 min-height: 390px;
+	 margin:0 1em 2em 1em;
+ }
+	#bride-text{
+		width: 65%;
+		float:left;
+	}
+	#groom-image{
+		float:left;
+		width: 35%;
+	}
+	#bride-image{
+	  width: 35%;
+		float:left;
+	}
+	#groom-text{
+	  width: 65%;
+	}
+}
+@media only screen and (max-width:736px) {
+.banner-bottom-grids{
+	 min-height: 360px;
+	 margin:0 1em 2em 1em;
+}
+#bride-text{
+	width: 65%;
+	float:left;
+}
+#groom-image{
+	float:left;
+	width: 35%;
+}
+#bride-image{
+  width: 35%;
+	float:left;
+}
+#groom-text{
+  width: 65%;
+}
+.important-people-head h3 {
+	font-size: 3.2em;
+}
+.important-people-text {
+	/*padding: 0 15px 0 0px;
+	margin-top: 13px;
+	margin-bottom: 28px;*/
+}
+.important-people-image {
+/*	padding: 0 0 0 5px;
+	margin: 11px 0 29px 0;*/
+}
+.s-icons {
+	top: 63px;
+	left: 46px;
+}
+.important-people-text p {
+	font-size: 14px;
+	height: 140px;
+}
+.important-people-image{
+/*  padding: 5px;*/
+}
+
 }
 @media only screen and (max-width:640px) {
-	.important-people-head h3 {
-		font-size: 3.2em;
-	}
-	.important-people-text {
-		padding: 0 15px 0 0px;
-		margin-top: 13px;
-		margin-bottom: 28px;
-	}
-	.important-people-image {
-		padding: 0 0 0 15px;
-		margin: 11px 0 29px 0;
-	}
-	.s-icons {
-		top: 63px;
-		left: 46px;
-	}
-	.important-people-text p {
-		font-size: 14px;
-		height: 140px;
+	.banner-bottom-grids{
+		 min-height: 340px;
+		 margin:0 1em 2em 1em;
 	}
 	.important-people {
 		padding: 2em 0 5px 0;
 	}
-	.social-icons {
-		padding-top: 9em;
-	}
 	.birds img {
 		left: 19.3em;
 	}
+	.important-people-text h4 {
+		font-size: 18px;
+	}
+	.important-people-text h5 {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.important-people-text p {
+		font-size: 13px;
+		line-height: 1.7em;
+		height: 130px;
+		overflow: hidden;
+	}
+}
+@media (max-width: 568px){
+	.banner-bottom-grids{
+		 min-height: 360px;
+		 margin:0 1em 2em 1em;
+	}
+	.important-people-text {
+     padding: 0 15px 0 15px;
+	}
+	#bride-text{
+		width: 63%;
+		float:left;
+	}
+	#groom-image{
+		float:left;
+		width: 37%;
+	}
+	#bride-image{
+		width: 37%;
+		float:left;
+	}
+	#groom-text{
+		width: 63%;
+	}
+	.important-people-text h4 {
+		font-size: 15px;
+	}
+	.important-people-text h5 {
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+	.important-people-text p {
+		font-size: 9px;
+		height: 150px;
+	}
 }
 @media only screen and (max-width:480px) {
-	.social-icons {
-		padding-top: 7em;
+	.banner-bottom-grids{
+		 min-height: 340px;
+		 margin:0 1em 2em 1em;
 	}
 	.important-people-head h3 {
 		font-size: 2.7em;
@@ -291,7 +482,7 @@ i.tw:hover,i.fb:hover{
 		width: 60%;
 	}
 	.important-people-image {
-		widtH: 40%;
+		/*widtH: 40%;*/
 		margin: 17px 0 29px 0;
 		padding: 0;
 	}
@@ -351,7 +542,7 @@ i.tw:hover,i.fb:hover{
 		margin-bottom: 28px;
 	}
 	.important-people-image {
-		widtH: 38%;
+	/*	widtH: 38%;*/
 		margin: 11px 0 14px 0;
 	}
 	.important-people-text {
@@ -400,8 +591,5 @@ i.tw:hover,i.fb:hover{
 		height: 30px;
 		background: url('../images/img-sprite.png') no-repeat -115px -3px;
 		background-size: 150px;
-	}
-	.social-icons {
-		padding-top: 6em;
 	}
 }

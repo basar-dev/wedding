@@ -323,6 +323,7 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 /*-- banner-bottom --*/
 .banner-bottom,.testimonials,.team,.services,.news,.gallery,.contact{
 	padding:3em 0;
+  padding-bottom:
 }
 .banner-bottom h3,.team h3,.services h3,.news h3,.newsletter h3,.gallery h3,.contact h3{
 	text-align:center;
@@ -378,9 +379,7 @@ p.about-dummy{
 .banner-bottom-grid{
 	padding:0;
 }
-.banner-bottom-grids{
-	margin:1em 0 16em 0;
-}
+
 .banner-bottom-grid,.team-grid1 {
     position: relative;
     overflow: hidden;
@@ -1549,6 +1548,9 @@ h2.resp-accordion {
 	}
 }
 @media (max-width:800px){
+  .banner-bottom, .testimonials, .team, .services, .news, .gallery, .contact {
+    padding: 3em 0;
+  }
 	.banner {
 		min-height: 300px;
 	}
@@ -1569,6 +1571,9 @@ h2.resp-accordion {
 	}
 }
 @media (max-width:768px){
+  .banner-bottom, .testimonials, .team, .services, .news, .gallery, .contact {
+    padding: 3em 0;
+  }
 	.banner-info p {
 		font-size: 3.3em;
 	}
