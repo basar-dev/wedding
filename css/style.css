@@ -67,7 +67,7 @@ input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.na
 	-ms-transition:.5s ease-in-out;
 }
 .banner{
-	background:url(../images/banner17.jpg) no-repeat 0px 0px;
+	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -335,12 +335,12 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 	padding-bottom:.5em;
 }
 .banner-bottom h3:before,.banner-bottom h3:after,.team h3:before,.team h3:after,.services h3:before,.services h3:after,.news h3:before,.news h3:after,.newsletter h3:before,.newsletter h3:after,.gallery h3:before,.gallery h3:after,.contact h3:before,.contact h3:after{
-	content: '';
-    background: #C2BBA1;
+	   content: '';
+    background: #b770a2;
     height: 1px;
     position: absolute;
     bottom:5.5%;
-    width: 10%;
+    width: 8%;
 }
 .banner-bottom h3:before,.team h3:before,.services h3:before,.news h3:before,.newsletter h3:before,.contact h3:before{
 	left:39%;
@@ -348,21 +348,22 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 .banner-bottom h3:after,.team h3:after,.services h3:after,.news h3:after,.newsletter h3:after,.gallery h3:after,.contact h3:after{
 	right:39.5%;
 }
-.banner-bottom h3 span:before,.banner-bottom h3 span:after,.team h3 span:before,.team h3 span:after,.services h3 span:before,.services h3 span:after,.news h3 span:before,.news h3 span:after,.newsletter h3 span:before,.newsletter h3 span:after,.gallery h3 span:before,.gallery h3 span:after,.contact h3 span:before,.contact h3 span:after{
-	content: '';
+.banner-bottom h3 span:before,.banner-bottom h3 span:after,.team h3 span:before,.team h3 span:after,.services h3 span:before,.services h3 span:after,.news h3 span:before, .news h3 span:after,.newsletter h3 span:before,.newsletter h3 span:after,.gallery h3 span:before,.gallery h3 span:after, .contact h3 span:before,.contact h3 span:after{
+	   content: '\f004';
     height: 10px;
     position: absolute;
-    bottom: 0;
+    font-family:"FontAwesome";
+    color: #b770a2;
+    bottom: 5px;
     width: 10px;
-    border: 1px solid #c2bba1;
-    transform: rotate(45deg);
+    font-size: 20px;
 }
 /*-- agileits --*/
 .banner-bottom h3 span:before,.team h3 span:before,.services h3 span:before,.news h3 span:before,.newsletter h3 span:before,.contact h3 span:before{
 	left:49%;
 }
 .banner-bottom h3 span:after,.team h3 span:after,.services h3 span:after,.news h3 span:after,.newsletter h3 span:after,.gallery h3 span:after,.contact h3 span:after{
-	right:49.5%;
+	right:50.15%;
 }
 .gallery h3 span:before{
 	left:49.4%;
@@ -685,14 +686,12 @@ ul.wmuSliderPagination {
 	margin:3em 0;
 }
 .services-grid1 span{
-    font-size: 1.5em;
-    color: #999;
+    font-size: 3.5em;
+    color: #69385b;
 }
 .services-grid1 {
     width: 35%;
-    border: 1px solid #999;
-    padding: 1.5em;
-	margin:0 auto 2em;
+	   margin:0 auto 2em;
 }
 .btn-primary {
     color:#212121;
@@ -2327,3 +2326,8 @@ h2.resp-accordion {
 		margin: 2em 0;
 	}
 }
+
+
+/***********************************************/
+/*  CUSTOM
+/***********************************************/

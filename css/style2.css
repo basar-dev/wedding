@@ -31,10 +31,15 @@
 
 #black h1 {
 	color: white;
-	font-size: 70px;
   font-family: 'Ruda', sans-serif;
   font-weight: 900;
 }
+
+#black > .container > .row > .col-lg-3 {
+			float:left;
+			width: 25%;
+}
+
 /* Padding top & bottom */
 .pt {
 	padding-top: 15px;
@@ -164,15 +169,13 @@ i.tw:hover,i.fb:hover{
 	left: 81px;
 	display:none;
 }
-
-.important-people-image:hover{
-	opacity:0.5;
-	cursor:pointer;
-}
-.important-people-image:hover div.s-icons{
-	display:block;
-}
 /*-- responsive-design --*/
+@media only screen and (max-width:1700px) {
+	.banner-bottom-grids{
+		min-height: 250px;
+		margin:0 1em 2em 1em;
+	}
+}
 @media only screen and (max-width:1366px) {
 	.important-people {
 		padding: 4em 0;
@@ -476,6 +479,9 @@ i.tw:hover,i.fb:hover{
 		height: 130px;
 		/*overflow: hidden;*/
 	}
+	#black > .container > .row > .col-lg-3 {
+				width: 50%;
+	}
 }
 @media (max-width: 568px){
 	.banner-bottom-grids{
@@ -660,4 +666,123 @@ i.tw:hover,i.fb:hover{
 		background: url('../images/img-sprite.png') no-repeat -115px -3px;
 		background-size: 150px;
 	}
+}
+
+
+/*--------------------------------------------------------------
+## Love Story Timeline
+--------------------------------------------------------------*/
+
+.timeline {
+    position: relative;
+    margin: 0 0 5rem;
+    text-align: left;
+}
+
+.timeline:before,
+.timeline:after {
+    content: "\f004";
+    color: #b57f9a;
+    font-family: "FontAwesome";
+    position: absolute;
+    left: -7px;
+    top: -15px;
+    z-index: 10;
+}
+
+.timeline:after {
+    bottom: -15px;
+    top: inherit;
+}
+
+.timeline ul {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    padding-bottom: 2rem;
+    position: relative;
+    margin: 0;
+}
+
+.timeline ul li:first-child {
+    padding-top: 2rem;
+}
+
+.timeline ul li:last-child {
+    padding-bottom: 5rem;
+}
+
+.timeline ul li:after {
+    bottom: 0;
+    border-left: 1px solid;
+    color: #DFDFDF;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.timeline-date {
+    line-height: 2;
+    margin-bottom: 0.625rem;
+    position: relative;
+}
+
+.timeline-date:before {
+    content: "_____";
+    color: #DFDFDF;
+    position: absolute;
+    left: -44px;
+    top: -4px;
+}
+
+.timeline-content-container,
+.timeline-date {
+    margin-left: 2.813rem;
+}
+
+.timeline-content-container {
+    overflow: hidden;
+}
+
+.timeline-content-featured-image {
+    margin-right: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .timeline-content-featured-image,
+    .timeline-content-featured-image img {
+        float: left;
+    }
+				.timeline-content-featured-image img {
+								border: 1px solid #69385b;
+								padding: 1px;
+				}
+}
+
+.timeline-content-info {
+    overflow: hidden;
+}
+
+.timeline-content-info h4 {
+    font-size: 1.125rem;
+    margin: 0 0 0.313rem;
+}
+
+.timeline-content-info p {
+    margin-bottom: 0;
+}
+
+.timeline-content-info .post-edit-link {
+    font-size: 0.75rem;
+}
+
+.page-template-template-timeline .hentry {
+    margin-bottom: 0;
 }
