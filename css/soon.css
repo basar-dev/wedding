@@ -2,31 +2,34 @@
 /******************************************************************************************************************************
 HEADER
 *******************************************************************************************************************************/
+#timer {
+  margin-top: 10%;
+}
+
 .timer_box{
     margin: 35px 24px;
     display: inline-block;
-    padding: 20px 12px 0px 12px;
+    padding: 50px;
     text-align: center;
-    width: 150px;
-    border-radius: 10%;
-    border: 0px solid #776071;
-    border-bottom: 1px solid #776071;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.1px solid #2f2f2f;
 }
 .timer_box h1{
     font-size: 44px;
-    margin-top: 5px;
+    margin-top: 0px;
+    min-width: 75px;
     margin-bottom: 0px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #1f1f1f;
+    font-weight: 200;
+    color: #2f2f2f;
 }
 #days p, #hours p, #minutes p, #seconds p {
-    margin-top: 0px;
-    color: #776071;
+    margin: 5px;
+    color: #2f2f2f;
     background-color: transparent;
 }
-.timer_box{
-    margin: em 1em 1em 0;
-}
+
 /******************************************************************************************************************************
 RESPONSIVE
 *******************************************************************************************************************************/
