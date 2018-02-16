@@ -1213,7 +1213,7 @@ h2.resp-accordion {
 /*-- //mail-us --*/
 /*-- footer --*/
 .footer{
-	background:url(../images/24.jpg) no-repeat 0px 0px;
+	background-color: #fff;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
