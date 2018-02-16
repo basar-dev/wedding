@@ -1993,14 +1993,14 @@ height:8px
 		margin-left: 15.2em;
 		width: 40%;
 	}
-	.footer-logo a {
+	/* .footer-logo a {
 		font-size: 2em;
 		background: url(../images/img-sp.png) no-repeat -4px -127px;
 		background-size: 150%;
 	}
 	.footer-logo p {
 		width: 45%;
-	}
+	} */
 	.footer {
     font-size: 0.6em;
 	}
@@ -2170,9 +2170,9 @@ height:8px
 		font-size: 14px;
 		width: 100%;
 	}
-	.footer-logo p {
+	/* .footer-logo p {
 		width: 50%;
-	}
+	} */
 }
 @media (max-width:375px){
 	.banner-bottom h3 span:after, .team h3 span:after, .services h3 span:after, .news h3 span:after, .newsletter h3 span:after, .gallery h3 span:after, .contact h3 span:after {
