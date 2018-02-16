@@ -1213,57 +1213,98 @@ h2.resp-accordion {
 /*-- //mail-us --*/
 /*-- footer --*/
 .footer{
-	background:url(../images/24.jpg) no-repeat 0px 0px;
+	background-color: #69385b;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	min-height:350px;
-	padding:3em 0;
+  padding: 5em 0 1em 0;
 	text-align:center;
-}
-.footer-pos {
-    margin-bottom: .5em;
-}
-.footer-pos img {
-    margin: 0 auto;
-}
-.footer-logo a{
-    font-size: 3em;
-    color: #fff;
-    background: url(../images/img-sp.png) no-repeat -6px -198px;
-    text-decoration: none;
-    padding-left: 1.5em;
-}
-.footer-logo p{
-	font-size: 14px;
-    margin: 1.5em auto;
-    padding-bottom: .5em;
-    border-bottom: 1px solid;
-    color: #fff;
-    text-transform: uppercase;
-    width: 20%;
-}
-.copyright p{
-	font-size:14px;
-	color:#fff;
-	line-height:1.8em;
-	margin:2em 0 0;
-}
-.copyright p a{
-	color:#45CBBF;
-	text-decoration:none;
-}
-.copyright p a:hover{
-	color:#fff;
+  font-size: 1em;
 }
 /*-- //footer --*/
 /*-- //footer --*/
-.logo h1 a img.centerany{
-
+/* .logo h1 a img.centerany{
 	margin-left:-300px;
-
+} */
+.zigzag-border-top:before{-webkit-mask-position:top center;top:-7px}
+.zigzag-border-top:after{-webkit-mask-position:top center;top:-8px}
+.zigzag-border-bottom:before{-webkit-mask-position:bottom center;bottom:-7px}
+.zigzag-border-bottom:after{-webkit-mask-position:bottom center;bottom:-8px}
+.zigzag-border{background-color:#fff}
+.zigzag-border.site-global-search, .zigzag-border.site-global-shares{
+  background-color:#fafafa
+}
+.zigzag-border{
+  position:relative;
+  padding-bottom: 15px;
+}
+.zigzag-border:before,.zigzag-border:after{-webkit-mask-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAgCAYAAABkWOo9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZtJREFUeNrsmM8rRFEUx68XipQkG2Yn5Q+wkY1YsGKBXhZmpSj5D2RjRfwLFiZlp+Q/wE52moUmGRY0TJMVj/F8j+6rl8Z7991fj7xTn82bO3c+c3v33HuOwxh7AodgBjSz9KMXLIF9cAHuwQt94Ie4Am5Kgn1gD3jfnAIaPjwC3RYlJ0D1B5dIUaIE+i1IToHXGMlIUeIW5AxKDoKagKTvxExEkgegxYAkzVkAnSKDHYExI2DDgCjNOZTkC74AH2BBo+Q0n9NPgPDAd7CoQXJOcPNIiwbsSqauDrAtsZLSokQFrIEeQcEVcCP5W180BbaSUQcn4AwU+R+gFesCA2AYjIF21fdFVdRaOOyPRCaaiWai/01UtUaq82RPXIJH/iyc8MdBmw5Z2SN0PcERugrKKkeo7UvJjo1Lia5rnhtRaSqL0irkNe4N19TFedPARt7SLXpqqLhrBeeionF59A7MgzcDoh6vw55VE/41GOW1vakocllPNo8eW27pTCZt6ZRSbpIV+GvWUDRoO87+orbjcqjt+EBtx08BBgAmwnQGoak+PQAAAABJRU5ErkJggg==");
+-webkit-mask-repeat:repeat-x;-webkit-mask-attachment:scroll;
+-webkit-mask-size:21px 16px;-webkit-mask-origin:content;background-color:inherit;content:" ";
+display:block;
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:8px
+}
+.zigzag-border:before{
+  z-index:2
+}
+.zigzag-border:after{
+  background-color:#000;
+  opacity:.07;
+  filter:alpha(opacity=7.000000000000001);
+  z-index:1
+}
+.zigzag-border-top:before{
+  -webkit-mask-position:top center;top:-7px
+}
+.zigzag-border-top:after{
+  -webkit-mask-position:top center;top:-8px
+}
+.zigzag-border-bottom:before{
+  -webkit-mask-position:bottom center;bottom:-7px
+}
+.zigzag-border-bottom:after{
+  -webkit-mask-position:bottom center;bottom:-8px
+}
+.primary-bg-color {
+  background-color: #de5781;
+  color: #fff;
+}
+.footer-credit{
+  margin-top:1em;
+  /* font-family:Lato; */
+  font-weight:400;
+  font-style:normal;
+  line-height:2;
+  letter-spacing:2px;
+  text-transform:
+  uppercase;color:#888
+}
+.footer-social-media-links{
+  position:relative;
+  padding-top:30px;
+  margin-top:20px
+}
+.footer-info .footer-social-media-links:before{
+  position:absolute;
+  width:80px;
+  left:50%;
+  top:0;
+  margin-left:-40px;
+  border-top:1px solid #000;
+  opacity:.1;
+  filter:alpha(opacity=10);
+  content:''
+}
+.footer-info .footer-social-media-links i
+{
+  font-size:24px;margin:0 12px
 }
 
 /*-- //footer --*/
@@ -1522,9 +1563,9 @@ h2.resp-accordion {
 	.mail-grid-left input[type="submit"] {
 		margin-left: 30.1em;
 	}
-	.footer {
+	.footer{
 		min-height: 340px;
-		padding: 2em 0;
+    font-size: 0.9em;
 	}
 	.team-grid1 img {
 		width: 100%;
@@ -1661,6 +1702,9 @@ h2.resp-accordion {
 	.link-effect-14 a {
 		margin: 0 230px;
 	}
+  .footer{
+    font-size: 0.8em;
+  }
 }
 @media (max-width:640px){
 	.link-effect-14 a {
@@ -1964,7 +2008,11 @@ h2.resp-accordion {
 	}
 	.footer {
 		min-height: 290px;
+    font-size: 0.6em;
 	}
+  .footer-credit{
+  letter-spacing: 1.5px;
+  }
 	.copyright p {
 		margin: 1em 0 0;
 	}
