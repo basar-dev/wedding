@@ -2310,6 +2310,43 @@ h2.resp-accordion {
 }
 
 
+/******************************************************************************************************************************
+COUNTDOWN
+*******************************************************************************************************************************/
+#timer{
+ width: 100%;
+}
+
+.timer_box{
+    margin: 35px 10px;
+    display: inline-block;
+    padding: 5vh;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+.timer_box h1{
+    font-size: 2em;
+    margin-top: 0px;
+    min-width: 75px;
+    margin-bottom: 0px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #FFF;
+}
+#days p, #hours p, #minutes p, #seconds p {
+    margin: 5px;
+    font-size: 0.5em;
+    color: #FFF;
+    background-color: transparent;
+}
+
+
 /***********************************************/
 /*  CUSTOM
 /***********************************************/
+
+.full-height {
+  height: 100vh;
+}
