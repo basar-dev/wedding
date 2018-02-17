@@ -61,26 +61,26 @@
 
     })();
 
-    $.isMobile = function(type){
-        var reg = [];
-        var any = {
-            blackberry : 'BlackBerry',
-            android : 'Android',
-            windows : 'IEMobile',
-            opera : 'Opera Mini',
-            ios : 'iPhone|iPad|iPod'
-        };
-        type = 'undefined' == $.type(type) ? '*' : type.toLowerCase();
-        if ('*' == type) reg = $.map(any, function(v){ return v; });
-        else if (type in any) reg.push(any[type]);
-        return !!(reg.length && navigator.userAgent.match(new RegExp(reg.join('|'), 'i')));
-    };
+    // $.isMobile = function(type){
+    //     var reg = [];
+    //     var any = {
+    //         blackberry : 'BlackBerry',
+    //         android : 'Android',
+    //         windows : 'IEMobile',
+    //         opera : 'Opera Mini',
+    //         ios : 'iPhone|iPad|iPod'
+    //     };
+    //     type = 'undefined' == $.type(type) ? '*' : type.toLowerCase();
+    //     if ('*' == type) reg = $.map(any, function(v){ return v; });
+    //     else if (type in any) reg.push(any[type]);
+    //     return !!(reg.length && navigator.userAgent.match(new RegExp(reg.join('|'), 'i')));
+    // };
 
 
 
     $(function(){
 
-        $('html').addClass($.isMobile() ? 'mobile' : 'desktop');
+        // $('html').addClass($.isMobile() ? 'mobile' : 'desktop');
 
         // .mbr-navbar--sticky
         $(window).scroll(function(){
