@@ -40,7 +40,7 @@ body a:hover{
 #about{
   margin:0 0 4em 0;
 }
-input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.nav-tabs > li > a,.copyright p a{
+input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.nav-tabs > li > a{
 	transition:.5s ease-in-out;
 	-webkit-transition:.5s ease-in-out;
 	-moz-transition:.5s ease-in-out;
@@ -56,7 +56,7 @@ input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.na
 	-ms-background-size:cover;
 	height: 100vh;
 }
-.logo{
+/* .logo{
 	float:left;
 	margin-left: 1em;
 }
@@ -72,7 +72,7 @@ input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.na
     width: 50px;
     height: 39px;
     margin: 0 auto;
-}
+} */
 .banner-social{
 	float:right;
 	margin: 2.2em 0 0;
@@ -1219,16 +1219,12 @@ h2.resp-accordion {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:350px;
   padding: 5em 0 1em 0;
 	text-align:center;
   font-size: 1em;
 }
 /*-- //footer --*/
 /*-- //footer --*/
-/* .logo h1 a img.centerany{
-	margin-left:-300px;
-} */
 .zigzag-border-top:before{-webkit-mask-position:top center;top:-7px}
 .zigzag-border-top:after{-webkit-mask-position:top center;top:-8px}
 .zigzag-border-bottom:before{-webkit-mask-position:bottom center;bottom:-7px}
@@ -1340,9 +1336,9 @@ height:8px
 	}
 }
 @media (max-width: 1080px){
-	.logo {
+	/* .logo {
 		margin-left: 14em;
-	}
+	} */
 	.banner-info {
 		margin: 5em auto 11em;
 		width: 95%;
@@ -1443,12 +1439,12 @@ height:8px
 	}
 }
 @media (max-width: 991px){
-	.logo h1 a {
+	/* .logo h1 a {
 		font-size: 1.7em;
 	}
 	.logo {
 		margin-left: 6em;
-	}
+	} */
 	.banner-info p {
 		font-size: 3.7em;
 	}
@@ -1564,7 +1560,6 @@ height:8px
 		margin-left: 30.1em;
 	}
 	.footer{
-		min-height: 340px;
     font-size: 0.9em;
 	}
 	.team-grid1 img {
@@ -1675,12 +1670,12 @@ height:8px
 	}
 }
 @media (max-width:667px){
-	.logo h1 a {
+	/* .logo h1 a {
 		font-size: 1.4em;
 	}
 	.logo {
 		margin-left: 4em;
-	}
+	} */
 	.banner-info p {
 		font-size: 3em;
 	}
@@ -1764,12 +1759,12 @@ height:8px
   div .timersub{
     font-size: 1em;
   }
-	.logo h1 a {
+	/* .logo h1 a {
 		font-size: 1.2em;
 	}
 	.logo {
 		margin-left: 3em;
-	}
+	} */
 	.navbar-toggle {
 		margin: 0 0 0 16em;
 	}
@@ -1781,14 +1776,14 @@ height:8px
 	}
 }
 @media (max-width: 568px){
-	.logo h1 a span {
+	/* .logo h1 a span {
 		background: url(../images/img-sp.png) no-repeat 0px -9px;
 		height: 28px;
 		background-size: 600%;
 	}
 	.logo {
 		margin-left: 2em;
-	}
+	} */
 	.banner-phone p {
 		margin: 2em 0 0;
 	}
@@ -2007,15 +2002,11 @@ height:8px
 		width: 45%;
 	}
 	.footer {
-		min-height: 290px;
     font-size: 0.6em;
 	}
   .footer-credit{
   letter-spacing: 1.5px;
   }
-	.copyright p {
-		margin: 1em 0 0;
-	}
 }
 @media (max-width: 414px){
 	.banner-info p {
@@ -2157,9 +2148,6 @@ height:8px
 	.get-in:nth-child(2) {
 		margin: 2em 0 0;
 	}
-	.footer {
-		min-height: 310px;
-	}
 	.services-grid1 {
 		padding: 1.5em;
 	}
@@ -2230,13 +2218,6 @@ height:8px
 	}
 	.banner-dummy p,.footer-logo p,.services-grid p,.get-in ul li,.mail-grid-left input[type="text"], .mail-grid-left input[type="email"], .mail-grid-left textarea,.b-wrapper p,.newsletter-grid-right p,.blog-grid-right p,.date-tag-right ul li a,.readmore-text p,.services-grids-wedding p,.modal-body, .banner-phone p, p.testimonials-dummy, .team-grid p,.navbar-nav > li > a,.b_label, .bar_label_min, .bar_label_max, .b_tooltip span {
 		font-size: 13px;
-	}
-	.copyright p {
-		font-size: 13px;
-		margin: 1.5em 0 0;
-	}
-	.footer {
-		min-height: 300px;
 	}
 	.footer-logo a {
 		font-size: 1.7em;
