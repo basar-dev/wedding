@@ -37,7 +37,7 @@ blockquote p{font-size:1.28571em}.form-control,.btn,.navbar,.alert,.list-group{-
 .hero-banner{
   background: #d2a3c4;
   position: relative;
-  margin-top: 0px;
+  margin-top: -75px;
   padding-top: 0;
   overflow: hidden
 }
