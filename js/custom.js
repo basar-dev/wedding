@@ -3,6 +3,8 @@ COMMING SOON PAGE
 *******************************************************************************************************************************/
 (function($) {
 
+  new WOW().init();
+
   var launch = new Date(2018, 07, 28, 11, 00);
 
   var days = $('#days');
@@ -33,4 +35,52 @@ COMMING SOON PAGE
       setTimeout(setDate, 1000);
     }
   }
+
+  function initMuglaMap() {
+      var mapOptions = {
+          zoom: 15,
+          center: new google.maps.LatLng(37.264466, 28.230149)
+      };
+      var mapElement = document.getElementById('mugla-map');
+      var map = new google.maps.Map(mapElement, mapOptions);
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(37.264466, 28.219892),
+          icon: 'images/custom-map-marker.png',
+          map: map,
+          title: 'Simge-Erkan-Mugla-Wedding!'
+      });
+  }
+
+  function initManisaMap() {
+      var mapOptions = {
+          zoom: 13,
+          center: new google.maps.LatLng(38.590497, 27.354718)
+      };
+      var mapElement = document.getElementById('manisa-map');
+      var map = new google.maps.Map(mapElement, mapOptions);
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(38.590497, 27.354718),
+          icon: 'images/custom-map-marker.png',
+          map: map,
+          title: 'Simge-Erkan-Manisa-Wedding!'
+      });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initMuglaMap);
+  google.maps.event.addDomListener(window, 'load', initManisaMap);
+
+  $('input[name=location]').on('change', function() {
+    var loc = $(this).val();
+    $('#' + loc + '-map-wrapper').show();
+    if (loc == "manisa") {
+      $('#mugla-map-wrapper').hide();
+      $('#mugla-map-label').removeClass('active');
+      $('#manisa-map-label').addClass('active');
+    } else if (loc == "mugla") {
+      $('#manisa-map-wrapper').hide();
+      $('#manisa-map-label').removeClass('active');
+      $('#mugla-map-label').addClass('active');
+    }
+  });
+
 })(jQuery);
