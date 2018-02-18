@@ -2797,12 +2797,68 @@ h6 em {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d6d6d6' fill-opacity='0.28'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.google-maps {
-  /*margin-top: 30px;*/
-  padding: 0px;
-  height: 70vh;
-}
-
 .services {
   padding-bottom: 0px;
+}
+
+.seeWeddingLocation {
+  color: #23527c;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+}
+
+.seeWeddingLocation:hover {
+  background-color: #f7f6f5;
+  /*box-shadow: inset 1px -2px 20px 0px rgba(234, 203, 212, 0.4);*/
+}
+
+.seeWeddingLocation.active {
+  color: #23527c;
+  border: 1px solid #23527c;
+  border-bottom: none;
+  /*box-shadow: inset 1px -2px 20px 0px rgba(0,0,0, 0.2);*/
+}
+
+.maps-wrapper {
+  padding: 0px;
+  height: 60vh;
+  position: relative;
+}
+
+#wedding-map {
+  height: 100%;
+}
+
+#over-map {
+  position: absolute;
+  z-index: 99;
+  top: 5vh;
+  left: 5%;
+  height: 50vh;
+  background-color: #FFF;
+  border: 2px solid #de5781;
+  color: #de5781;
+  border-radius: 10px;
+}
+
+#over-map h2 {
+  padding: 30px 10px 10px 10px;
+  text-align: center;
+  font-size: 40px;
+  /*border-bottom: 1px solid #e9e9e9;*/
+}
+
+#over-map p {
+  text-align: center;
+  padding: 20px 15px 0px 15px;
+  color: black;
+  font-size: 20px;
+  font-family: Lato;
+}
+
+#over-map p i {
+  color: #367ed0;
 }
