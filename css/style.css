@@ -37,9 +37,6 @@ body a:hover{
   font-size:14px;
   line-height:1.8em;
 }
-#about{
-  margin:0 0 4em 0;
-}
 input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.nav-tabs > li > a{
   transition:.5s ease-in-out;
   -webkit-transition:.5s ease-in-out;
@@ -305,7 +302,6 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 /*-- banner-bottom --*/
 .banner-bottom,.testimonials,.team,.services,.news,.gallery,.contact{
   padding:3em 0;
-  padding-bottom:
 }
 .banner-bottom h3,.team h3,.services h3,.news h3,.newsletter h3,.gallery h3,.contact h3{
   text-align:center;
@@ -345,13 +341,12 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 .banner-bottom h3 span:before,
 .team h3 span:before,
 .services h3 span:before,
-.services h3 span:after,
 .news h3 span:before,
 .newsletter h3 span:before,
 .gallery h3 span:before,
 .contact h3 span:before {
     content: '\f004';
-    height: 2vh;
+    height: 1vh;
     position: absolute;
     font-family:"FontAwesome";
     color: #de5781;
@@ -359,6 +354,16 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
     width: 10px;
     font-size: 20px;
 }
+
+.news h3:before,
+.news h3:after {
+  background: white;
+}
+
+.news h3 span:before {
+  color: white;
+}
+
 /*-- agileits --*/
 .banner-bottom h3 span:before,.team h3 span:before,.services h3 span:before,.news h3 span:before,.newsletter h3 span:before,.contact h3 span:before{
   left:49%;
@@ -688,7 +693,7 @@ ul.wmuSliderPagination {
 }
 .services-grid1 span{
     font-size: 3.5em;
-    color: #de5781;
+    color: #d3a3c4;
 }
 .services-grid1 {
     width: 35%;
@@ -758,7 +763,7 @@ ul.wmuSliderPagination {
     width:42%;
 }
 .services-grids-wedding-right img{
-    border: 4px solid #de5781;
+    border: 4px solid #d3a3c4;
     border-radius: 15px 50px;
     -moz-border-radius: 15px 50px;
     -webkit-border-top-left-radius: 15px;
@@ -768,7 +773,7 @@ ul.wmuSliderPagination {
     -khtml-border-radius: 30px;
 }
 .services-grids-wedding-left img{
-    border: 4px solid #de5781;
+    border: 4px solid #d3a3c4;
     border-radius: 50px 15px;
     -moz-border-radius: 50px 15px;
     -webkit-border-top-left-radius: 50px;
@@ -783,7 +788,7 @@ ul.wmuSliderPagination {
 }
 .services-grids-wedding-right h4,.services-grids-wedding-left h4{
   font-size:1.4em;
-  color:#de5781;
+  color:#d3a3c4;
   margin:1em 0;
   font-weight: 700;
 }
@@ -811,7 +816,7 @@ ul.wmuSliderPagination {
   overflow: hidden;
 }
 .countHours,.countDays,.countMinutes {
-    border-right: 1px solid #de5781;
+    border-right: 1px solid #d3a3c4;
 }
 .countDays, .countHours, .countMinutes, .countSeconds {
     display:inline-block;
@@ -1233,13 +1238,13 @@ h2.resp-accordion {
 }
 
 .footer{
-  background-color: #de5781;
+  background-color: #d3a3c4;
   background-size:cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
   -ms-background-size:cover;
-  padding: 5em 0 1em 0;
+  padding: 0em 0 1em 0;
   text-align:center;
   font-size: 1em;
 }
@@ -1309,7 +1314,7 @@ h2.resp-accordion {
   -webkit-mask-position:bottom center;bottom:-8px
 }
 .primary-bg-color {
-  background-color: #de5781;
+  background-color: #d3a3c4;
   color: #fff;
 }
 .footer-credit{
@@ -2416,11 +2421,20 @@ COUNTDOWN
 /***********************************************/
 
 .hero-banner{
-  background:#333;
   position:relative;
-  margin-top:-75px;
+  margin-top:0px;
   padding-top:0;
   overflow:hidden;
+  background: url(../images/banner.jpg) no-repeat center center fixed;
+  /*background: #d2a3c4;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gradient-shadow-overlay {
+  position:  relative;
 }
 
 .hero-banner .hero-banner-groom-area,
@@ -2456,69 +2470,70 @@ COUNTDOWN
   right:0;
 }
 
-.hero-banner .hero-banner-overlay-layer {
-  top:0;
-  bottom:0;
-  padding-top:50px;
-  padding-bottom:50px;
-  position:relative;
-  left:0;
-  right:0;
-  display:table;
-  min-height:inherit;
-  height:inherit;
-  color:#fff;
-  text-shadow:0 3px 10px rgba(0,0,0,.1);
-  z-index:2;
-  -webkit-animation-duration:1s;
-  animation-duration:1s;
-  -webkit-animation-fill-mode:both;
-  animation-fill-mode:both
+.hero-banner .hero-banner-overlay-layer{
+  top: 0;
+  bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  position: relative;
+  left: 0;
+  right: 0;
+  display: table;
+  min-height: inherit;
+  height: inherit;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0,0,0,.1);
+  z-index: 2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .hero-banner .hero-banner-overlay-layer > * {
-  display:table-cell;
-  vertical-align:middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
+
 .hero-banner .hero-banner-ampersand {
-  font-size:2em;
-  font-family:serif;
-  text-shadow:0 5px 0 rgba(0,0,0,.15);
+  font-size: 2em;
+  font-family: serif;
+  text-shadow: 0 5px 0 rgba(0,0,0,.15);
 }
 
 .hero-banner .hero-banner-timer {
-  font-size:110px;
-  font-size:7.85em;
-  font-weight:900;
-  color:#FFF;
-  margin-top:30px;
-  margin-bottom:0;
-  line-height:1;
-  text-shadow:0 5px 0 rgba(0,0,0,.15);
-  letter-spacing:.1em;
+  font-size: 11px;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #FFF;
+  margin-top: 30px;
+  margin-bottom: 0;
+  line-height: 1;
+  text-shadow: 0 5px 0 rgba(0,0,0,.15);
+  letter-spacing: .1em;
 }
 
 .hero-banner .hero-banner-timer .countdown-section {
-  display:inline-block;
-  position:relative;
-  margin-bottom:15px;
-  padding-bottom:15px
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .hero-banner .hero-banner-timer .countdown-label {
-  font-size:14px;
-  font-weight:normal;
-  font-family:"Courier New",monospace;
-  display:block;
-  position:absolute;
-  top:100%;
-  left:0;
-  right:0;
-  letter-spacing:1px;
-  text-shadow:0 0 3px rgba(0,0,0,.3);
-  text-overflow:ellipsis;
-  overflow:hidden
+  font-size: 14px;
+  font-weight:  normal;
+  font-family: "Courier New",monospace;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px rgba(0,0,0,.3);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .hero-banner .hero-banner-message {
@@ -2545,11 +2560,6 @@ COUNTDOWN
   .hero-banner .hero-banner-bride-area h3 span.first-name {
     font-size:36px;
     font-size:1.5em;
-  }
-
-  .hero-banner .hero-banner-timer {
-    font-size:64px;
-    font-size:4.571em;
   }
 }
 
@@ -2627,8 +2637,6 @@ COUNTDOWN
   }
 
   .hero-banner .hero-banner-timer {
-    font-size:36px;
-    font-size:2.58em;
     text-shadow:0 3px 0 rgba(0,0,0,.15);
   }
 }
@@ -2694,7 +2702,7 @@ h6 b {
   font-family:Lato;
   font-weight:900;
   font-style:normal;
-  color:#de5781;
+  color:#d3a3c4;
 }
 
 h1 em,
@@ -2747,88 +2755,38 @@ h6 em {
   clear: both;
 }
 
-.hero-banner{
-  background: #d2a3c4;
-  position: relative;
-  margin-top: 0px;
-  padding-top: 0;
-  overflow: hidden
-}
-
-.gradient-shadow-overlay {
-  position:  relative;
-}
-
-.hero-banner .hero-banner-overlay-layer{
-  top: 0;
-  bottom: 0;
-  padding-top: 50px;
-  padding-bottom: 0px;
-  position: relative;
-  left: 0;
-  right: 0;
-  display: table;
-  min-height: inherit;
-  height: inherit;
-  color: #fff;
-  text-shadow: 0 3px 10px rgba(0,0,0,.1);
-  z-index: 2;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.hero-banner .hero-banner-overlay-layer > * {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.hero-banner .hero-banner-ampersand {
-  font-size: 2em;
-  font-family: serif;
-  text-shadow: 0 5px 0 rgba(0,0,0,.15);
-}
-
-.hero-banner .hero-banner-timer {
-  font-size: 11px;
-  font-size: 1.2em;
-  font-weight: 900;
-  color: #FFF;
-  margin-top: 30px;
-  margin-bottom: 0;
-  line-height: 1;
-  text-shadow: 0 5px 0 rgba(0,0,0,.15);
-  letter-spacing: .1em;
-}
-
-.hero-banner .hero-banner-timer .countdown-section {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-}
-
-.hero-banner .hero-banner-timer .countdown-label {
-  font-size: 14px;
-  font-weight:  normal;
-  font-family: "Courier New",monospace;
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  letter-spacing: 1px;
-  text-shadow: 0 0 3px rgba(0,0,0,.3);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-
 /***********************************************/
 /*  CUSTOM
 /***********************************************/
 
 .full-height {
   height: 100vh;
+}
+
+.people {
+  margin-top: 40px;
+}
+
+.people .bride-groom .row img  {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+
+.people .bride-groom .row h2 {
+  margin: 25px 0px;
+  text-align: center;
+}
+
+.people .bride-groom .row p {
+  font-family: Raleway;
+  text-align: center;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.people .bride-groom .row p strong {
+  color: black;
 }
