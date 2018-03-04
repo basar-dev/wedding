@@ -16,15 +16,6 @@
 <link href="assets/css/style2.css" rel="stylesheet" type="text/css" media="all">
 <link href="assets/css/navbar.css" rel="stylesheet" type="text/css" media="all">
 
-<script type="application/x-javascript">
-  function hideURLbar(){
-    window.scrollTo(0,1);
-  }
-  addEventListener("load", function() {
-    setTimeout(hideURLbar, 0);
-  }, false);
-</script>
-
 </head>
 
 <body>
@@ -46,7 +37,9 @@
                 <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                   <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#">Home</a></li>
                   <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#about">About Us</a></li>
-                  <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#locations">Wedding Parties</a></li>
+                  <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#first-wedding">First Wedding</a></li>
+                  <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#second-wedding">Second Wedding</a></li>
+                  <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#extra-activities">Extra Activities</a></li>
                 </ul>
               </div>
             </nav>
@@ -131,28 +124,33 @@
     </div>
   </div>
 
-
-  <!-- LOCATIONS -->
-  <div class="services" id="locations">
-    <h3><span>Wedding Parties</span></h3>
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:30px; padding: 0px;">
-       <a class="col-lg-6 col-md-6 col-sm-6 col-xs-6 seeWeddingLocation active" id="mugla-map-label" data-location="mugla">1st Wedding</a>
-       <a class="col-lg-6 col-md-6 col-sm-6 col-xs-6 seeWeddingLocation" id="manisa-map-label" data-location="manisa">2nd Wedding</a>
-    </div>
+  <!-- FIRST WEDDING -->
+  <div class="services" id="first-wedding">
+    <h3><span>First Wedding Party</span></h3>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 maps-wrapper">
-      <div id="wedding-map"></div>
-      <div id="over-map" class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
-        <div id="mugla-info">
-          <h2>28 July 2018</h2>
+      <div id="wedding-map-mugla" class="wedding-map hidden-xs"></div>
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 over-map">
+        <div id="wedding-info-mugla">
+          <h2>28 July 2018 ~ 20:00</h2>
           <p><i>Address;</i><br> Cumhuriyet Parkı, Bayır Mahallesi, Turgut Reis Caddesi, 48040 Menteşe / Muğla, Turkey
             <a href="https://goo.gl/maps/U9vasr6zutG2" style="font-size:15px;" target="_blank">(Map)</a>
           </p>
           <p><i>Closest Airport;</i><br> Milas–Bodrum Airport (BJV)</p>
           <p><i>Sightseeing Places;</i><br> Akyaka, Bodrum, Marmaris, Fethiye</p>
         </div>
-        <div id="manisa-info" class="hidden">
-          <h2>05 August 2018</h2>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <!-- SECOND WEDDING -->
+  <div class="services mt" id="second-wedding">
+    <h3><span>Second Wedding Party</span></h3>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 maps-wrapper">
+      <div id="wedding-map-manisa" class="wedding-map hidden-xs"></div>
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 over-map box-right">
+        <div id="wedding-info-manisa">
+          <h2>05 August 2018 ~ 20:00</h2>
           <p><i>Address;</i><br> Spilos Hotel, Keçili Köy Mahallesi, Mimar Sinan Blv. 288 / A, 45030 Yunusemre / Manisa, Turkey
             <a href="https://goo.gl/maps/Lts7uHCQDD12" style="font-size:15px;" target="_blank">(Map)</a>
           </p>
@@ -161,12 +159,49 @@
         </div>
       </div>
     </div>
-    <div class="clearfix"> </div>
+    <div class="clearfix"></div>
   </div>
 
+  <!-- EXTRA ACTIVITIES -->
+  <div class="services" id="extra-activities" style="padding-top:0px;">
+    <div class="container">
+      <div class="row mt">
+        <h3><span>Extra Activities</span></h3>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pt">
+          <div class="row">
+            <img class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-4 col-xs-push-4" src="assets/images/henna.svg" alt=""/>
+          </div>
+          <div class="row pt">
+            <h4>Bridal Henna Party</h4>
+            <p class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-8 col-xs-push-2">Henna party is going to be held a day before the first wedding at 20:00 on the same location.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pt">
+          <div class="row">
+            <img class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-4 col-xs-push-4" src="assets/images/cutlery.svg" alt=""/>
+          </div>
+          <div class="row pt">
+            <h4>Lunch</h4>
+            <p class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-8 col-xs-push-2">We are going to host a lunch for the guests between 12:00 and 16:00 on the day of the first wedding.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pt">
+          <div class="row">
+            <img class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-4 col-xs-push-4" src="assets/images/car.svg" alt=""/>
+          </div>
+          <div class="row pt">
+            <h4>Picking Up the Bride</h4>
+            <p class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-8 col-xs-push-2">We are going to pick the bride from her hometown at 12:00 and drive to groom's hometown as a convoy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!--  BLACK SECTION -->
-  <div class="news" id="black">
+  <!-- FUN ESTIMATIONS-->
+  <div class="news" id="pink">
     <div class="container">
       <h3><span>Fun Estimations</span></h3>
       <div class="row centered" style="margin-top:50px;">
@@ -208,14 +243,14 @@
         </div>
         <div class="footer-message">
           <p>Any further question please send us an email to<br>
-            <a href="mailto:erkan@mebasar.com" style="color: #de5780;">erkan@mebasar.com</a>
+            <a href="mailto:erkan@mebasar.com">erkan@mebasar.com</a>
             or
-            <a href="mailto:simgeekiz48@gmail.com" style="color: #de5780;">simgeekiz48@gmail.com</a>
+            <a href="mailto:simgeekiz48@gmail.com">simgeekiz48@gmail.com</a>
           </p>
         </div>
         <div class="footer-credit">
           <p>
-             Designed with <i class="fa fa-heart" style="color: #de5781;">  </i> by Erkan &amp; Simge
+             Designed with <i class="fa fa-heart"></i> by Simge &amp; Erkan
           </p>
         </div>
       </div>
@@ -227,7 +262,8 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBad0dla12tUs7r6FC0QQnqhABoWzEAco" type="text/javascript"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBad0dla12tUs7r6FC0QQnqhABoWzEAco" type="text/javascript"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
   <script src="assets/js/navbar.js"></script>
   <script src="assets/js/custom.js"></script>
 

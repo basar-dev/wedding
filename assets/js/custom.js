@@ -1,10 +1,10 @@
 /******************************************************************************************************************************
 COMMING SOON PAGE
 *******************************************************************************************************************************/
-(function($) {
+(function(window, $, google, WOW) {
 
   // Set timer to a date
-  var launch = new Date(2018, 07, 28, 20, 00);
+  var launch = new Date(2018, 7, 28, 20, 0);
 
   var mapConfig = {
     mugla: {
@@ -15,18 +15,20 @@ COMMING SOON PAGE
       marker: {
         'lat': 37.264466,
         'long': 28.219892,
-        'title': 'Simge-Erkan-Mugla-Wedding!'
+        'mapsUrl': 'https://goo.gl/maps/U9vasr6zutG2',
+        'address': 'Cumhuriyet Parkı, Bayır Mahallesi, Turgut Reis Caddesi, 48040 Menteşe / Muğla, Turkey'
       },
     },
     manisa: {
       options:  {
         zoom: 14,
-        center: new google.maps.LatLng(38.590497, 27.3400)
+        center: new google.maps.LatLng(38.590497, 27.3750)
       },
       marker: {
         'lat': 38.590497,
         'long': 27.354718,
-        'title': 'Simge-Erkan-Manisa-Wedding!'
+        'mapsUrl': 'https://goo.gl/maps/Lts7uHCQDD12',
+        'address': 'Spilos Hotel, Keçili Köy Mahallesi, Mimar Sinan Blv. 288 / A, 45030 Yunusemre / Manisa, Turkey'
       }
     }
   };
@@ -71,25 +73,36 @@ COMMING SOON PAGE
   /******************************************************************/
 
   function initMap (locId) {
-    var mapElement = document.getElementById('wedding-map');
+    var mapElement = document.getElementById('wedding-map-' + locId);
     var map = new google.maps.Map(mapElement, mapConfig[locId].options);
+    var markerConfig = mapConfig[locId].marker;
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(mapConfig[locId].marker.lat, mapConfig[locId].marker.long),
-        title: mapConfig[locId].marker.title,
-        icon: 'assets/images/custom-map-marker.png',
-        map: map
+      position: new google.maps.LatLng(markerConfig.lat, markerConfig.long),
+      title: 'Open in Google Maps',
+      icon: 'assets/images/custom-map-marker.png',
+      map: map
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div id="content"><h4 style="margin-bottom:0px;"><a href="' + markerConfig.mapsUrl + '" target="_blank">Open in Google Maps</a></h4></div></div>'
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
     });
   }
 
-  google.maps.event.addDomListener(window, 'load', initMap('mugla'));
+  function initMaps () {
+    if (window.innerWidth > 768) {
+      for (var locId in mapConfig) {
+        initMap(locId);
+      }
+    }
+  }
 
-  $('.seeWeddingLocation').on('click', function() {
-    var loc = $(this).data('location');
-    initMap(loc);
-    $('#mugla-map-label').toggleClass('active');
-    $('#manisa-map-label').toggleClass('active');
-    $('#mugla-info').toggleClass('hidden');
-    $('#manisa-info').toggleClass('hidden');
-  });
+  window.onresize = function() {
+    initMaps();
+  };
 
-})(jQuery);
+  google.maps.event.addDomListener(window, 'load', initMaps());
+
+
+})(window, window.jQuery, window.google, window.WOW);

@@ -264,7 +264,8 @@
     padding-top: 13px;
   }
   .mbr-navbar--auto-collapse .mbr-navbar__menu {
-    background: rgba(0, 0, 0, 0.9);
+    /*background: rgba(0, 0, 0, 0.9);*/
+    background: #d3a3c4e6;
     display: none;
     height: 100%;
     left: 0;

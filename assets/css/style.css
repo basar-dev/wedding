@@ -1250,6 +1250,11 @@ h2.resp-accordion {
   font-size: 1em;
 }
 
+.footer-message a,
+.footer-credit .fa-heart {
+  color: #de5780;
+}
+
 .zigzag-border-top:before {
   -webkit-mask-position:top center;
   top:-7px;
@@ -2080,7 +2085,7 @@ h2.resp-accordion {
     min-height: 365px;
   }
   .banner-bottom h3, .team h3, .services h3, .news h3, .newsletter h3, .gallery h3, .contact h3, .testimonials h3, .testimonials-grid-right h3 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
   .banner-bottom h3 span:after, .team h3 span:after, .services h3 span:after, .news h3 span:after, .newsletter h3 span:after, .gallery h3 span:after, .contact h3 span:after {
     right: 48%;
@@ -2820,13 +2825,14 @@ h6 em {
   padding: 0px;
   height: 60vh;
   position: relative;
+  margin-top: 40px;
 }
 
-#wedding-map {
+.wedding-map {
   height: 100%;
 }
 
-#over-map {
+.over-map {
   position: absolute;
   z-index: 99;
   top: 5vh;
@@ -2838,21 +2844,69 @@ h6 em {
   border-radius: 10px;
 }
 
-#over-map h2 {
+.over-map.box-right {
+  right: 5%;
+  left: inherit;
+}
+
+.over-map h2 {
   padding: 30px 10px 10px 10px;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.2em;
   border-bottom: 1px solid #e9e9e9;
 }
 
-#over-map p {
+.over-map p {
   text-align: center;
   padding: 20px 15px 0px 15px;
   color: black;
-  font-size: 20px;
+  font-size: 1.2em;
   font-family: Lato;
 }
 
-#over-map p i {
+.over-map p i {
   color: #367ed0;
+}
+
+#second-location {
+  margin-top: 50px;
+}
+
+@media (max-width:768px){
+
+  .banner-bottom h3, .team h3, .services h3, .news h3, .newsletter h3, .gallery h3, .contact h3, .testimonials h3, .testimonials-grid-right h3 {
+    font-size: 2em;
+  }
+
+  .people .bride-groom .row h2 {
+    font-size: 1.5em;
+  }
+
+  .maps-wrapper {
+    height: 100%;
+    margin-top: 10px;
+  }
+
+  .over-map {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 110%;
+    padding-bottom: 10px;
+    border: none;
+  }
+
+  .over-map.box-right {
+    right: 0;
+    left: inherit;
+  }
+
+  .over-map h2 {
+    font-size: 1.5em;
+    border-bottom: none;
+  }
+
+  .over-map p {
+    font-size: 1em;
+  }
 }

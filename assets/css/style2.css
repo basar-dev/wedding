@@ -1,15 +1,15 @@
-#black {
-  margin-top: 0px;
+#pink {
+  margin-top: 50px;
   background-color: #d3a3c4;
   min-height: 300px;
   width: 100%;
 }
 
-#black h3 {
+#pink h3 {
   color: white;
 }
 
-#black h4 {
+#pink h4 {
   color: white;
   text-transform: uppercase;
   font-size: 18px;
@@ -19,23 +19,23 @@
   margin-bottom: 40px;
 }
 
-#black p {
+#pink p {
   color: white;
   font-size: 16px;
   font-weight: 400;
 }
 
-#black i {
+#pink i {
   font-size: 35px;
 }
 
-#black h1 {
+#pink h1 {
   color: white;
   font-family: 'Ruda', sans-serif;
   font-weight: 900;
 }
 
-#black > .container > .row > .col-lg-3 {
+#pink > .container > .row > .col-lg-3 {
       float:left;
       width: 25%;
 }
@@ -478,7 +478,7 @@ i.tw:hover,i.fb:hover{
     height: 130px;
     /*overflow: hidden;*/
   }
-  #black > .container > .row > .col-lg-3 {
+  #pink > .container > .row > .col-lg-3 {
         width: 46%;
         margin-left: 2%;
   }
