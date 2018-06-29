@@ -4,7 +4,7 @@ COMMING SOON PAGE
 (function(window, $, google, WOW) {
 
   // Set timer to a date
-  var launch = new Date(2018, 7, 28, 20, 0);
+  var launch = new Date(2018, 6, 28, 20, 0);
 
   var mapConfig = {
     mugla: {
